@@ -1,0 +1,66 @@
+/* src/index.css */
+
+/* VARIÁVEIS CSS */
+:root {
+  --dark-bg: #0a0a1f;
+  --card-bg: rgba(15, 15, 40, 0.7);
+  --border-color: #00ccff;
+  --highlight-color: #a0ff00;
+  --accent-color: #ff0099;
+  --text-light: #e0e0ff;
+  --text-darker: #b0b0cc;
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.3s ease-in-out;
+  --shadow-intensity: 0.6;
+}
+
+/* RESET E ESTILOS GLOBAIS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILOS DE TEMA ESPACIAL (FUNDO) */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-light);
+  background-color: var(--dark-bg);
+  background-image: url("URL_DA_SUA_IMAGEM_DE_TEXTURA_AQUI"); /* **SUBSTITUA AQUI** */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* CONTAINER PRINCIPAL DO REACT */
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* ESTILO DO TÍTULO */
+h1 {
+  font-family: "Orbitron", sans-serif;
+  color: var(--border-color);
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.8em;
+  text-shadow: 0 0 10px rgba(0, 204, 255, 0.8), 0 0 20px rgba(0, 204, 255, 0.5);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+/* KEYFRAMES (ANIMAÇÃO DE BRILHO) */
+@keyframes cardShine {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
