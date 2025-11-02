@@ -16,27 +16,28 @@ import calcaImage from "../assets/Calça.png";
 const productData: CardProps[] = [
   {
     imgSrc: shortsImage, // Variável importada
-    title: "Shorts Cargo Eclipse",
+    title: "Bermuda London DiffCompany",
     description:
       "Perfeito para quem busca aventura com estilo. Conforto e resistência para suas explorações.",
     marketLink: "link-do-mercado-livre-shorts", // **SUBSTITUA PELO LINK REAL**
-    buttonText: "Explorar",
+    buttonText: "Comprar",
   },
   {
     imgSrc: camisaImage, // Variável importada
-    title: "Camisa Sedosa Via Láctea",
+    title: "Camisa Gaufy DiffCompany",
     description:
       "O toque suave do universo em sua pele. Elegância que brilha em qualquer constelação.",
-    marketLink: "link-do-mercado-livre-camisa", // **SUBSTITUA PELO LINK REAL**
-    buttonText: "Descobrir",
+    marketLink:
+      "https://produto.mercadolivre.com.br/MLB-4281361099-camisa-masculina-manga-curta-gola-esporte-acetinada-luxo-_JM", // **SUBSTITUA PELO LINK REAL**
+    buttonText: "Comprar",
   },
   {
     imgSrc: calcaImage, // Variável importada
-    title: "Calça Foguete Skinny",
+    title: "Calça London DiffCompany",
     description:
       "Corte preciso para um visual aerodinâmico. O traje ideal para desbravar novas fronteiras.",
     marketLink: "link-do-mercado-livre-calca", // **SUBSTITUA PELO LINK REAL**
-    buttonText: "Adquirir",
+    buttonText: "Comprar",
   },
 ];
 
