@@ -11,7 +11,7 @@ export const productData = [
   },
   {
     id: 2,
-    imgSrc: "./as", // Substitua pelo link real
+    imgSrc: "4444", // Substitua pelo link real
     title: "Camisa Sedosa Via Láctea",
     description:
       "O toque suave do universo em sua pele. Elegância que brilha em qualquer constelação.",

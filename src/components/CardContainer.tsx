@@ -7,9 +7,9 @@ import Card, { type CardProps } from "./Card";
 // Importação das Imagens da pasta assets
 // O nome do arquivo real deve ser usado aqui.
 // Use os IDs dos arquivos para referenciar os arquivos originais.
-import shortsImage from "../assets/IMG20240318201709.jpg";
-import camisaImage from "../assets/IMG20240318201339.jpg";
-import calcaImage from "../assets/IMG20240318195643.jpg";
+import shortsImage from "../assets/Bermuda.png";
+import camisaImage from "../assets/Camisa.png";
+import calcaImage from "../assets/Calça.png";
 
 // Dados dos seus produtos (usando a interface CardProps)
 // O TypeScript verifica se todos os objetos aqui têm o formato definido em CardProps.
