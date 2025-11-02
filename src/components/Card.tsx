@@ -1,8 +1,18 @@
-// src/components/Card.jsx
+// src/components/Card.tsx
 
 import React from "react";
 
-// Estilos do Card (Container do Card)
+// === 1. DEFINIÇÃO DA INTERFACE (TIPAGEM) ===
+// Exportamos para que o CardContainer possa usá-la para tipar os dados.
+export interface CardProps {
+  imgSrc: string; // O caminho importado da imagem (será uma string)
+  title: string;
+  description: string;
+  marketLink: string; // O link para o Mercado Livre
+  buttonText: string;
+}
+
+// Estilos CSS específicos do Card (para injetar no head)
 const cardStyles = `
     .card {
         background-color: var(--card-bg);
@@ -15,6 +25,7 @@ const cardStyles = `
         transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
         position: relative;
         overflow: hidden;
+        margin: 10px; /* Adicionado margem para espaçamento melhor */
     }
 
     .card:hover {
@@ -23,7 +34,6 @@ const cardStyles = `
         border-color: var(--highlight-color);
     }
 
-    /* Efeito de Brilho Interno */
     .card::before {
         content: '';
         position: absolute;
@@ -40,13 +50,12 @@ const cardStyles = `
 
     .card:hover::before {
         opacity: 1;
-        animation: cardShine 1.5s infinite linear; /* Keyframe definido em index.css */
+        animation: cardShine 1.5s infinite linear;
     }
 
-    /* Imagem */
     .card-image {
         width: 100%;
-        height: 260px;
+        height: 320px;
         object-fit: cover;
         border-radius: 12px;
         margin-bottom: 20px;
@@ -59,18 +68,16 @@ const cardStyles = `
         transform: scale(1.03);
     }
 
-    /* Título */
     .card-title {
         font-family: 'Orbitron', sans-serif;
         color: var(--highlight-color);
-        font-size: 1.2em;
+        font-size: 1.6em;
         margin-top: 0;
         margin-bottom: 12px;
         text-shadow: 0 0 5px rgba(160, 255, 0, 0.6);
         letter-spacing: 0.5px;
     }
 
-    /* Descrição */
     .card-description {
         font-size: 0.95em;
         margin-bottom: 25px;
@@ -78,7 +85,6 @@ const cardStyles = `
         line-height: 1.5;
     }
 
-    /* Botão */
     .card-button {
         display: inline-block;
         background: linear-gradient(45deg, var(--accent-color), #FF66B2);
@@ -103,9 +109,6 @@ const cardStyles = `
     }
 `;
 
-// O uso de <style> com dangerouslySetInnerHTML é uma forma rápida
-// de aplicar estilos que são específicos do componente sem um arquivo CSS separado.
-// Para um projeto maior, o ideal seria usar um Card.css importado.
 function injectStyles() {
   if (!document.getElementById("card-styles")) {
     const styleElement = document.createElement("style");
@@ -115,8 +118,15 @@ function injectStyles() {
   }
 }
 
-const Card = ({ imgSrc, title, description, marketLink, buttonText }) => {
-  // Injeta os estilos do Card uma vez
+// === 2. COMPONENTE COM TIPAGEM ===
+const Card: React.FC<CardProps> = ({
+  imgSrc,
+  title,
+  description,
+  marketLink,
+  buttonText,
+}) => {
+  // Injeta os estilos do Card uma vez quando o componente for montado
   injectStyles();
 
   return (
