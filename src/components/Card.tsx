@@ -55,7 +55,7 @@ const cardStyles = `
 
     .card-image {
         width: 100%;
-        height: 320px;
+        height: 260px;
         object-fit: cover;
         border-radius: 12px;
         margin-bottom: 20px;
