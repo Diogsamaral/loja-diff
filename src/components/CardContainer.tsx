@@ -19,7 +19,8 @@ const productData: CardProps[] = [
     title: "Bermuda London DiffCompany",
     description:
       "Perfeito para quem busca aventura com estilo. Conforto e resistência para suas explorações.",
-    marketLink: "link-do-mercado-livre-shorts", // **SUBSTITUA PELO LINK REAL**
+    marketLink:
+      "https://produto.mercadolivre.com.br/MLB-5892154038-bermuda-sarja-bolso-faca-e-bolso-traseiro-embutido-_JM", // **SUBSTITUA PELO LINK REAL**
     buttonText: "Comprar",
   },
   {
