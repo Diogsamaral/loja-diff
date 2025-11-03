@@ -36,7 +36,8 @@ const productData: CardProps[] = [
     title: "Calça London DiffCompany",
     description:
       "Corte preciso para um visual aerodinâmico. O traje ideal para desbravar novas fronteiras.",
-    marketLink: "link-do-mercado-livre-calca", // **SUBSTITUA PELO LINK REAL**
+    marketLink:
+      "https://produto.mercadolivre.com.br/MLB-5890572376-calca-masculina-casual-bolso-faca-e-bolso-traseiro-embutido-_JM?attributes=COLOR_SECONDARY_COLOR%3AUHJldG8%3D&picker=true&quantity=1", // **SUBSTITUA PELO LINK REAL**
     buttonText: "Comprar",
   },
 ];
