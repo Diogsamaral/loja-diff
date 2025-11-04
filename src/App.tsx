@@ -5,7 +5,7 @@ function App() {
     <>
       <h1>🌌👽 SUA JORNADA COMEÇA AQUI 👽🌌</h1>
       <h3>🚫 COLEÇÃO NO LOGO 🚫</h3>
-      <p style={{ width: "600px", padding: 20, textAlign: "center" }}>
+      <p style={{ width: "350px", textAlign: "center" }}>
         Senhoras e senhoras, terraquios e estraterrestes, apresentamos a vocês
         nossa primeira coleção, a coleção no logo. As peças não tem logo, apenas
         nas etiquetas. Peças elegante e com caimento impecável. Claro que a
