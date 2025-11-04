@@ -5,7 +5,7 @@ function App() {
     <>
       <h1>🌌👽 SUA JORNADA COMEÇA AQUI 👽🌌</h1>
       <h3>🚫 COLEÇÃO NO LOGO 🚫</h3>
-      <h4>
+      <p>
         Senhoras e senhoras, terraquios e estraterrestes, apresentamos a vocês
         nossa primeira coleção, a coleção no logo. As peças não tem logo, apenas
         nas etiquetas. Peças elegante e com caimento impecável. Claro que a
@@ -15,7 +15,7 @@ function App() {
         estando com uma camisa leve. Calça, tem um corte diferencia, modelagem
         direto de Londres. Nosso trabalho a princípio foi desenvolver algo
         fidedigno. Hoje temos um exemplares para oferecer aos hunamos.
-      </h4>
+      </p>
       <CardContainer />
     </>
   );
