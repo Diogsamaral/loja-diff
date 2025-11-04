@@ -4,7 +4,8 @@ function App() {
   return (
     <>
       <h1>🌌👽 SUA JORNADA COMEÇA AQUI 👽🌌</h1>
-      <h2>👽🚫 COLEÇÃO NO LOGO 🚫👽</h2>
+      <h3>🚫 COLEÇÃO NO LOGO 🚫</h3>
+
       <CardContainer />
     </>
   );
